@@ -37,7 +37,6 @@ const Faq = () => {
           )}
           <p className="font-semibold"> What is TECH CHECK?</p>
         </div>
-
         {togglevalue && (
           <div className="mx-3 py-2">
             <p className="font-semibold text-amber-500">
