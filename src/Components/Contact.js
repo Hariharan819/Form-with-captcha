@@ -39,7 +39,6 @@ const Contact = () => {
           <input
             type="text"
             name="name"
-            id=""
             placeholder="Name"
             className="bg-gray-200 placeholder-gray-600 rounded-lg p-2 w-full sm:w-2/6"
             required
