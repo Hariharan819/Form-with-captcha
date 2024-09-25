@@ -69,7 +69,10 @@ const Contact = () => {
           />
         </div>
         <div className="flex justify-center pt-4">
-          <button className="bg-teal-700 text-white p-2 rounded-md my-2 w-full sm:w-4/6" disabled={!captchavalue}>
+          <button
+            className="bg-teal-700 text-white p-2 rounded-md my-2 w-full sm:w-4/6"
+            disabled={!captchavalue}
+          >
             Send
           </button>
         </div>
