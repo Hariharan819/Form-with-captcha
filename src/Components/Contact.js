@@ -19,12 +19,13 @@ const Contact = () => {
       alert("Form Submitted Successfully");
       event.target.reset();
     } else {
-      console.log("Error", data);
+      alert("Error", data);
       console.log(data.message);
     }
   };
   return (
-    <div className="border border-stone-200 shadow-md w-full sm:w-3/4 md:w-2/4 rounded-md mx-auto absolute bottom-0 left-0 right-0 md:absolute md:bottom-6 md:left-0 md:right-0">
+    <div className="border border-stone-200 shadow-md w-full sm:w-3/4 md:w-2/4 rounded-md mx-auto md:mt-9 sm:mt-3 lg:mt-16 ">
+    {/* // absolute bottom-0 left-0 right-0 md:absolute md:bottom-6 md:left-0 md:right-0 */}
       <h1 className="font-bold font-mono justify-center flex text-xl py-3 mx-2 ">
         Contact Us
       </h1>

@@ -13,7 +13,8 @@ const Faq = () => {
   };
 
   return (
-    <div className="border border-stone-200 shadow-md w-full sm:w-3/4 md:w-2/4 rounded-md mx-auto absolute top-5 left-0 right-0">
+    <div className="border border-stone-200 shadow-md w-full sm:w-3/4 md:w-2/4 rounded-md mx-auto md:mt-8 sm:mt-8">
+      {/* absolute top-5 left-0 right-0 */}
       <h1 className="font-bold font-mono text-xl flex justify-center pt-2">
         FAQ
       </h1>
