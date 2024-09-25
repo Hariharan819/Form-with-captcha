@@ -11,7 +11,7 @@ const Contact = () => {
 
     const formData = new FormData(event.target);
 
-    formData.append("access_key", "4afe32ff-cc6e-45d2-b8a8-a8cdd6e301d0");
+    formData.append("access_key", "dffedc6d-cecc-47a9-9b65-ae78357abbf9");
 
     const response = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
@@ -69,7 +69,7 @@ const Contact = () => {
         </div>
         <div className="flex justify-center pt-4">
           <button
-            className="bg-teal-700 text-white p-2 rounded-md my-2 w-full sm:w-4/6"
+            className="bg-black text-white p-2 rounded-md my-2 w-full sm:w-4/6"
             disabled={!captchavalue}
           >
             Send
