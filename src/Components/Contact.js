@@ -1,6 +1,11 @@
-import React from "react";
-
+import React, { useState } from "react";
+import ReCAPTCHA from "react-google-recaptcha";
+//6Lfoe04qAAAAAEtyHhLn-lqcEBUrlXl3yXD4jGYY
 const Contact = () => {
+  const [captchavalue, setcaptchavalue] = useState(null);
+  function onChange(value) {
+    setcaptchavalue(value);
+  }
   const onSubmit = async (event) => {
     event.preventDefault();
 
@@ -24,8 +29,8 @@ const Contact = () => {
     }
   };
   return (
-    <div className="border border-stone-200 shadow-md w-full sm:w-3/4 md:w-2/4 rounded-md mx-auto md:mt-9 sm:mt-3 lg:mt-16 ">
-    {/* // absolute bottom-0 left-0 right-0 md:absolute md:bottom-6 md:left-0 md:right-0 */}
+    <div className="border border-stone-200 shadow-md w-full sm:w-3/4 md:w-2/4 rounded-md mx-auto md:mt-2 sm:mt-1 lg:mt-8">
+      {/* // absolute bottom-0 left-0 right-0 md:absolute md:bottom-6 md:left-0 md:right-0 */}
       <h1 className="font-bold font-mono justify-center flex text-xl py-3 mx-2 ">
         Contact Us
       </h1>
@@ -57,8 +62,14 @@ const Contact = () => {
             required
           ></textarea>
         </div>
+        <div className="flex justify-center mt-2 -mb-5">
+          <ReCAPTCHA
+            sitekey="6Lfoe04qAAAAAEtyHhLn-lqcEBUrlXl3yXD4jGYY"
+            onChange={onChange}
+          />
+        </div>
         <div className="flex justify-center pt-4">
-          <button className="bg-teal-700 text-white p-2 rounded-md my-2 w-full sm:w-4/6">
+          <button className="bg-teal-700 text-white p-2 rounded-md my-2 w-full sm:w-4/6" disabled={!captchavalue}>
             Send
           </button>
         </div>
